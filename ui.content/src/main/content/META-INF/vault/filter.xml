@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/component-library" mode="merge"/>
+    <filter root="/content/component-library" mode="merge"/>
+    <filter root="/content/dam/component-library" mode="merge"/>
+    <filter root="/content/experience-fragments/component-library" mode="merge"/>
+</workspaceFilter>

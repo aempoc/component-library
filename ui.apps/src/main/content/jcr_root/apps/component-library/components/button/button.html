@@ -1,0 +1,20 @@
+<style>
+	.button-primary{background:orange}
+    .button-secondary{background:green}
+    .button-clear-green{background:none;border:2px solid green}
+</style>
+<button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+        data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+        data-sly-use.iconTemplate="icon.html"
+      	data-sly-use.buttonStyle="com.aem.compLib.core.models.Button" 
+        data-sly-element="${button.link ? 'a' : 'button'}"
+        type="${button.link ? '' : 'button'}"
+        id="${component.id}"
+        class="cmp-button ${buttonStyle.buttonType}"
+        href="${button.link}"
+        aria-label="${button.accessibilityLabel}"
+        data-cmp-clickable="${button.data ? true : false}"
+        data-cmp-data-layer="${button.data.json}">
+    <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+    <span data-sly-test="${button.text}" class="cmp-button__text">${button.text}</span>
+</button>
