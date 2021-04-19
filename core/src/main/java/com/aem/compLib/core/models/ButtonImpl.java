@@ -10,19 +10,11 @@ import javax.inject.Inject;
 public class ButtonImpl implements Button {
 
     @Inject
-    @Default(values="button-primary")
+    @Default(values="td-button td-button-block td-cta-button td-cta-action td-button-primary")
     public String buttonType;
-
-    @Inject
-    @Default(values="large")
-    public String buttonSize;
 
     @Override
     public String getButtonType() {
         return buttonType;
-    }
-    @Override
-    public String getButtonSize() {
-        return buttonSize;
     }
 }

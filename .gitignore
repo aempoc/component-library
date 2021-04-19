@@ -103,4 +103,4 @@ reports/
 dispatcher/src/conf.d/variables/default.vars
 
 #aem content
-ui.content/src/main/content/jcr_root/content/
+#ui.content/src/main/content/jcr_root/content/
