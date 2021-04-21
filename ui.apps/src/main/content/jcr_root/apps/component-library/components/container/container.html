@@ -1,5 +1,5 @@
-<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer">
-    <sly data-sly-test.responsive="${container.layout == 'RESPONSIVE_GRID'}"
-         data-sly-use.responsiveGridTemplate="responsiveGrid.html"
-         data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container}"></sly>
+<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer"
+	 data-sly-use.grid="com.aem.compLib.core.models.Grid"	>
+    <sly data-sly-use.responsiveGridTemplate="responsiveGrid.html"
+         data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container, grid=grid}"></sly>
 </sly>

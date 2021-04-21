@@ -8,13 +8,13 @@
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2021-04-16T11:54:32.469Z"
+        jcr:lastModified="{Date}2021-04-19T13:45:34.444Z"
         jcr:lastModifiedBy="admin"
         jcr:mixinTypes="[cq:ReplicationStatus]"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}8"
-            dam:extracted="{Date}2021-04-16T11:54:31.813Z"
+            dam:extracted="{Date}2021-04-19T13:45:34.131Z"
             dam:Fileformat="PNG"
             dam:MIMEtype="image/png"
             dam:Numberofimages="{Long}1"
