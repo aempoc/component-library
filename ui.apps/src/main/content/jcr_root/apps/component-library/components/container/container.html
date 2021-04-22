@@ -1,5 +1,10 @@
 <sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer"
-	 data-sly-use.grid="com.aem.compLib.core.models.Grid"	>
-    <sly data-sly-use.responsiveGridTemplate="responsiveGrid.html"
-         data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container, grid=grid}"></sly>
+	 data-sly-use.grid="com.aem.compLib.core.models.Grid" 
+     data-sly-use.titleStyle="com.aem.compLib.core.models.Title">
+	<sly data-sly-test.responsive="${container.layout == 'SIMPLE'}"
+		 data-sly-use.responsiveGridTemplate="sectionGrid.html"
+         data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container, grid=grid, titleStyle=titleStyle}"></sly>
+    <sly  data-sly-test.responsive="${container.layout == 'RESPONSIVE_GRID'}"
+    	   data-sly-use.responsiveGridTemplate="responsiveGrid.html"
+         data-sly-call="${responsiveGridTemplate.responsiveGrid @ container=container, grid=grid, titleStyle=titleStyle}"></sly>
 </sly>

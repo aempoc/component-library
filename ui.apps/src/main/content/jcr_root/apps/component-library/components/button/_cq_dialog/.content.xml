@@ -135,6 +135,38 @@
                                                         value="td-link-standalone"/>
                                                 </items>
                                             </buttonType>
+                                            <buttonSize
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Button Size"
+                                                name="./buttonSize">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <xl
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Extra Large"
+                                                        value="col-12 col-sm-5 col-md-5 col-lg-5"/>
+                                                    <lg
+                                                        granite:hide="${cqDesign.disableStatic}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Large"
+                                                        value="col-12 col-sm-4 col-md-4 col-lg-4"/>
+                                                    <md
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Medium"
+                                                        value="col-7 col-sm-3 col-md-3 col-lg-3"/>
+                                                    <sm
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Small"
+                                                        value="col-5 col-sm-2 col-md-2 col-lg-2"/>
+                                                </items>
+                                            </buttonSize>
                                         </items>
                                     </column>
                                 </items>

@@ -1,7 +1,9 @@
 <template data-sly-template.responsiveGrid="${ @ container, grid, titleStyle}">
-    <div id="${container.id}"
+    <section id="${container.id}"
          class="${titleStyle.cssClass} ${titleStyle.alignment} ${grid.gridColLg} ${grid.gridOffsetLg} ${grid.gridColMd} ${grid.gridOffsetMd} ${grid.gridColSm} ${grid.gridOffsetSm} ${grid.gridColXs} ${grid.gridOffsetXs}"
          style="${container.backgroundStyle @ context='styleString'}">
-        <sly data-sly-resource="${resource @ resourceType='/apps/component-library/components/responsivegrid'}"></sly>
-    </div>
+        <div class="td-container">
+        	<sly data-sly-resource="${resource @ resourceType='/apps/component-library/components/responsivegrid'}"></sly>
+        </div>
+    </section>
 </template>
