@@ -1,0 +1,44 @@
+<div class="td-service td-col-xs-12 td-col-sm-6 td-col-md-5 td-col-md-offset-1">
+                        <div class="td-row">
+                            <div class="td-col-sm-12">
+
+                                <!-- Optional Sub header starts (removing opening anchor tag) -->
+                                                                    <a href="#" tabindex="-1" aria-hidden="true">
+                                                                <!-- Optional Sub header ends (removing opening anchor tag) -->
+                                <!-- Optional Image starts -->
+                                                                    <picture>
+                                        <source srcset="${properties.imagePath}" media="(min-width: 1200px)">
+                                        <source srcset="${properties.imagePath}" media="(min-width: 1024px)">
+                                        <source srcset="${properties.imagePath}" media="(min-width: 768px)">
+                                        <source srcset="${properties.imagePath}" media="(max-width: 767px)">
+                                        <!-- Following is a fallback for IE. It makes sense to serve the lg image because we know it's a desktop -->
+                                        <img srcset="${properties.imagePath}" alt="">
+                                    </picture>
+                                                                <!-- Optional Image ends -->
+                                <!-- Optional Sub header starts (removing closing anchor tag) -->
+                                                                    </a>
+                                                                <!-- Optional Sub header ends (removing closing anchor tag) -->
+                            </div>
+                        </div>
+                        <div class="td-row">
+                            <div class="td-col-sm-12">
+                                <div class="td-service-content">
+                                    <div class="td-callout" style="height: 109px;">
+                                        <!-- Optional Sub header starts -->
+                                                                                    <h3 class="td-service-heading"><a href="${properties.linkPath}" class="td-link-standalone">${properties.title}</a></h3>
+                                                                                <!-- Optional Sub header ends -->
+
+                                        <!-- Optional Description starts -->
+                                                                                    <div class="rte">
+                                                <p class="td-rte-margin-top-none">${properties.text}</p>
+                                            </div>
+                                                                                <!-- Optional Description ends -->
+                                    </div>
+                                    <div class="td-cta-button" style="height: 0px;">
+                                        <!-- Optional CTA starts -->
+                                                                                <!-- Optional CTA ends -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
