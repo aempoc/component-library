@@ -1,0 +1,13 @@
+
+<sly data-sly-test="${properties.iconType=='interactive'}">
+    <div class="td-icon-wrapper td-interactive-icon icon-regular">
+
+        <span class="td-icon ${properties.cssClass}"></span>
+
+        <span class="td-forscreenreader">Accessibility Description</span>
+
+    </div>
+</sly>
+<sly data-sly-test="${properties.iconType=='static'}">
+<span class="td-icon icon-regular ${properties.cssClass}"></span>
+</sly>
