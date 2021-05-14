@@ -1,44 +1,9 @@
-<div class="td-service td-col-xs-12 td-col-sm-6 td-col-md-5 td-col-md-offset-1">
-                        <div class="td-row">
-                            <div class="td-col-sm-12">
-
-                                <!-- Optional Sub header starts (removing opening anchor tag) -->
-                                                                    <a href="#" tabindex="-1" aria-hidden="true">
-                                                                <!-- Optional Sub header ends (removing opening anchor tag) -->
-                                <!-- Optional Image starts -->
-                                                                    <picture>
-                                        <source srcset="assets/img/11.5-service-description/11.5.2_Desktop_425x178.jpg" media="(min-width: 1200px)">
-                                        <source srcset="assets/img/11.5-service-description/11.5.2_TabletLandscape_378x178.jpg" media="(min-width: 1024px)">
-                                        <source srcset="assets/img/11.5-service-description/11.5.2_TabletPortrait_331x178.jpg" media="(min-width: 768px)">
-                                        <source srcset="assets/img/11.5-service-description/11.5.3_Mobile_580x230.jpg" media="(max-width: 767px)">
-                                        <!-- Following is a fallback for IE. It makes sense to serve the lg image because we know it's a desktop -->
-                                        <img srcset="assets/img/11.5-service-description/11.5.2_Desktop_425x178.jpg" alt="">
-                                    </picture>
-                                                                <!-- Optional Image ends -->
-                                <!-- Optional Sub header starts (removing closing anchor tag) -->
-                                                                    </a>
-                                                                <!-- Optional Sub header ends (removing closing anchor tag) -->
-                            </div>
-                        </div>
-                        <div class="td-row">
-                            <div class="td-col-sm-12">
-                                <div class="td-service-content">
-                                    <div class="td-callout" style="height: 109px;">
-                                        <!-- Optional Sub header starts -->
-                                                                                    <h3 class="td-service-heading"><a href="#" class="td-link-standalone">Browse all credit <span class="td-link-lastword">cards<span class="td-icon td-icon-rightCaret" aria-hidden="true"></span></span></a></h3>
-                                                                                <!-- Optional Sub header ends -->
-
-                                        <!-- Optional Description starts -->
-                                                                                    <div class="rte">
-                                                <p class="td-rte-margin-top-none">Discover our vast array of personal credit card options. You are sure to find the perfect card.</p>
-                                            </div>
-                                                                                <!-- Optional Description ends -->
-                                    </div>
-                                    <div class="td-cta-button" style="height: 0px;">
-                                        <!-- Optional CTA starts -->
-                                                                                <!-- Optional CTA ends -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="service">
+               <div class="service-icon no-link">
+                  <span class="td-icon-wrapper td-interactive-icon"><span class="td-icon ${properties.iconClass}" aria-hidden="true"></span></span>
+               </div>
+               <div class="service-copy">
+                  <div class="subheader">${properties.subHeader}</div>
+                  <div class="rte copy">${properties.description}</div>
+               </div>
+</div>
