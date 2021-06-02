@@ -1,0 +1,13 @@
+
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser">
+
+<sly data-sly-test.aBanner="${properties.bannerType=='aBanner'}"
+		 data-sly-use.aBannerTemplate="aBanner.html"
+         data-sly-call="${aBannerTemplate.aBanner @ teaser=teaser}"></sly>
+
+<sly data-sly-test.bannerCTA="${properties.bannerType=='bannerCTA'}"
+		 data-sly-use.bannerCTATemplate="bannerCTA.html"
+         data-sly-call="${bannerCTATemplate.bannerCTA @ teaser=teaser}"></sly>
+
+</sly>
+

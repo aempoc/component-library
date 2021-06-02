@@ -1,0 +1,24 @@
+<template data-sly-template.bannerCTA="${ @ teaser}">
+    <section title="description for screen readers" class="td_rq_a_banner td-a-banner a-banner-cta {parallax_top_m:46}" data-bg-srcset='{"lg":"${properties.desktopImage}", "md":"${properties.lanscapeImage}", "sm":"${properties.portraitImage}", "xs":"${properties.mobileImage}"}'>		
+        <div class="td-container td-xs-full-bleed td-banner-content">			
+            <div class="td-col td-col-xs-12 td-col-md-5  td-col-md-offset-7 td-col-sm-6  td-col-sm-offset-6 td-col-lg-4 td-col-lg-offset-8">				
+                <div class="td-a-banner-callout parallax-banner">			
+                    <div class="rte">
+                        <div data-sly-resource="${@ path='par_1', resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>		
+                    </div>
+                    <div class="td-row callout-action">																					
+                        <div class="td-col td-col-xs-10 td-col-xs-offset-1 td-col-sm-9 td-col-sm-offset-0">	
+                             <!--/*<sly data-sly-list="${teaser.actions}">
+                               <button class="td-button td-button-large td-button-primary td-button-block" type="button">${item.title}</button>	
+
+                                <sly data-sly-test.par="${'par_{0}{1}' @format=[itemList.index,'button']}" />
+                                <div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                            </sly> */-->
+                            <div data-sly-resource="${@ path='par_0', resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                        </div>					
+                    </div>				
+                </div>			
+            </div>		
+        </div>	
+    </section>
+</template>

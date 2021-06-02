@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-05-05T07:16:35.209Z"
+        cq:lastModified="{Date}2021-05-17T10:21:39.788Z"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2021-04-19T06:44:02.310Z"
         cq:lastReplicatedBy="admin"
@@ -141,13 +141,14 @@
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="component-library/components/button"/>
-                    <button_1428219539
-                        jcr:created="{Date}2021-04-16T11:24:14.047Z"
+                    <teaser
+                        jcr:created="{Date}2021-05-17T10:20:10.530Z"
                         jcr:createdBy="admin"
-                        jcr:lastModified="{Date}2021-04-16T11:24:14.047Z"
+                        jcr:lastModified="{Date}2021-05-17T10:21:39.777Z"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="component-library/components/button"/>
+                        sling:resourceType="component-library/components/image"
+                        fileReference="/content/dam/system/img/11.5.3_Desktop_320x178.jpg"/>
                 </container>
             </container>
         </root>
