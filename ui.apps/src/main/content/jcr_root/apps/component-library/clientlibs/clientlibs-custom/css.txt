@@ -1,0 +1,2 @@
+src/default.css
+fonts/icons.css

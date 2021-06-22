@@ -1,0 +1,66 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.css @ categories='comp.sectionContainer'}" data-sly-unwrap/>
+<section class="td_rq_equal_height_row ${properties.sectionClass} {sm_cols_per_row: ${properties.column}, md_cols_per_row: ${properties.column}, lg_cols_per_row: ${properties.column}${properties.containerMeta}} td-service-description ${properties.bgColor} ready"
+    data-sly-use.sc="com.aem.compLib.core.models.SectionContainer">
+    <div class="td-container">
+        <div data-sly-resource="${@ path='par_0', resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+        <div class="sub-heading">
+            <div data-sly-resource="${@ path='par_1', resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap>
+        </div>
+        </div>
+        <div class="td-row">
+            <div class="td-col-sm-12">
+                <div class="td-row td-service-wrapper-${properties.column}">
+                    <sly data-sly-list="${sc.columnList}" data-sly-unwrap>
+						 <sly data-sly-test.test1="${sc.columnList.size==2}">
+                            <sly data-sly-test="${itemList.index==0}">
+                                <sly
+                                    data-sly-set.titleClass="td-service td-col-xs-12 td-col-sm-6 td-col-md-5 td-col-md-offset-1">
+                                </sly>
+                            </sly>
+                            <sly data-sly-test="${itemList.index==1}">
+                                <sly data-sly-set.titleClass="td-service td-col-xs-12 td-col-sm-6 td-col-md-5"></sly>
+                            </sly>
+                           </sly>
+                        <sly data-sly-test="${sc.columnList.size==3}" data-sly-unwrap>
+                            <sly data-sly-set.titleClass="td-service td-col-xs-12 td-col-sm-4"></sly>
+                        </sly>
+                        <sly data-sly-test="${sc.columnList.size==4}" data-sly-unwrap>
+                            <sly data-sly-test=${itemList.even}>
+                                <sly data-sly-set.titleClass="td-service td-col-xs-12 td-col-sm-5 td-col-md-3"></sly>
+                            </sly>
+                            <sly data-sly-test=${itemList.odd}>
+                                <sly data-sly-set.titleClass="td-service td-col-xs-12 td-col-sm-5 td-col-sm-offset-1 td-col-md-3 td-col-md-offset-0"></sly>
+                            </sly>
+                        </sly>
+                        <div class="${titleClass}">
+                            <div class="td-row">
+                                <div class="td-col-sm-12">
+                                	<sly data-sly-test.par="${'par_{0}{1}' @format=[itemList.index,1]}" />
+                                    <div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                                </div>
+                            </div>
+                            <div class="td-row">
+                                <div class="td-col-sm-12">
+                                    <div class="td-service-content">
+                                        <div class="td-callout">
+                                            <sly data-sly-test.par="${'par_{0}{1}' @format=[itemList.index,2]}" />
+                                    		<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                                            <div class="rte">
+                                               <sly data-sly-test.par="${'par_{0}{1}' @format=[itemList.index,3]}" />
+                                    			<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                                            </div>
+                                        </div>
+                                        <div class="td-cta-button">
+                                            <sly data-sly-test.par="${'par_{0}{1}' @format=[itemList.index,4]}" />
+                                    		<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,6 @@
 @ECHO OFF
 
-:MENU
+
 echo 1. Install Package in Author Instance
 echo 2. Install Bundle in Author Instance
 echo 3. Install Package in Publish Instance
@@ -26,9 +26,5 @@ GOTO :MENU
 echo Installing bundle to Publish instance..
 mvn clean install -PautoInstallBundle -Daem.port=4503
 GOTO :MENU
-:CASE_5
-GOTO :EXIT
-:DEFAULT_CASE
-echo Invalid choice
-GOTO :MENU
+:MENU
 pause
