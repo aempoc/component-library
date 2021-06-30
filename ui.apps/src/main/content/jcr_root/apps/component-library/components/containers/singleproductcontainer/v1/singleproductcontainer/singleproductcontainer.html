@@ -1,0 +1,11 @@
+<sly data-sly-test.leftAlignedImage="${properties.imageAlignment=='left'}"
+		data-sly-use.component="leftAlignedImage.html"
+    	data-sly-call="${component.leftAlignedImage @ properties=properties}"></sly>
+<sly data-sly-test.rightAlignedImage="${properties.imageAlignment=='right'}"
+		 data-sly-use.component="rightAlignedImage.html"
+         data-sly-call="${component.rightAlignedImage @ properties=properties}"></sly>
+</sly>
+<sly data-sly-test.rightAlignedImage="${properties.imageAlignment=='center'}"
+		 data-sly-use.component="centerAlignedImage.html"
+         data-sly-call="${component.centerAlignedImage @ properties=properties}"></sly>
+</sly>

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-05-28T05:51:28.977Z"
+        cq:lastModified="{Date}2021-06-25T14:16:51.642Z"
         cq:lastModifiedBy="admin"
         cq:template="/conf/component-library/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
@@ -55,6 +55,27 @@
                                 text2="Mauris efficitur facilisis turpis a congue"/>
                         </serviceiconwithmap>
                     </serviceiconwithdescr>
+                    <button
+                        jcr:created="{Date}2021-06-25T14:07:17.914Z"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-25T14:07:17.914Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="component-library/components/atomic/button/v1/button"/>
+                    <title
+                        jcr:created="{Date}2021-06-25T14:08:10.575Z"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-25T14:08:10.575Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="component-library/components/atomic/title/v1/title"/>
+                    <image
+                        jcr:created="{Date}2021-06-25T14:16:51.639Z"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-25T14:16:51.639Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="component-library/components/atomic/image/v1/image"/>
                 </container>
             </container>
         </root>

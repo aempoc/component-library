@@ -42,6 +42,22 @@
                                                 fieldDescription="Link to a content page, external URL or page anchor."
                                                 fieldLabel="Link"
                                                 name="./link"/>
+                                            <window
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Link target window"
+                                                name="./window">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <sameWindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Same window / tab"
+                                                        value="_self"/>
+                                                    <newWindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="New window / tab"
+                                                        value="_blank"/>
+                                                </items>
+                                            </window>
                                             <icon
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -54,6 +70,30 @@
                                                 fieldDescription="HTML ID attribute to apply to the component."
                                                 fieldLabel="ID"
                                                 name="./id"/>
+                                            <actionType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Action type"
+                                                name="./actionType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <buttonType
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Button"
+                                                        value="buttonType"/>
+                                                    <linkType
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Link"
+                                                        value="linkType"/>
+                                                    <search
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Search"
+                                                        value="search"/>
+                                                    <phone
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Phone"
+                                                        value="phone"/>
+                                                </items>
+                                            </actionType>
                                         </items>
                                     </column>
                                 </items>

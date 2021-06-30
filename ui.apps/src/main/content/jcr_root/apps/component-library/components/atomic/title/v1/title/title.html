@@ -6,6 +6,6 @@
      id="${component.id}"
      data-sly-element="${title.type}" class="${titleStyle.alignment} ${titleStyle.cssClass}">
      <a data-sly-unwrap="${!title.linkURL || title.linkDisabled}" href="${title.linkURL}" class="td-link-standalone"
-        data-cmp-clickable="${title.data ? true : false}">${text}</a>
+        data-cmp-clickable="${title.data ? true : false}" target="${properties.window}">${text}</a>
 </h1>
 <sly data-sly-call="${template.placeholder @ isEmpty=!text}"></sly>

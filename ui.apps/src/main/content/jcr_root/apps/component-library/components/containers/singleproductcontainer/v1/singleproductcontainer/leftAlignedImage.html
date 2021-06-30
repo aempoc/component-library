@@ -1,0 +1,38 @@
+<template data-sly-template.leftAlignedImage="${@ properties}">
+    <section class="td-single-product">
+        <div class="td-container">
+            <div class="td-row">
+                <div class="td-col-xs-12">
+					<sly data-sly-test.par="${'par_{0}' @format=['Header']}" />
+                    <div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                </div>
+            </div>
+            <div class="td-row">
+                <div class="td-col-xs-12 td-col-sm-5 td-col-md-5 td-col-md-offset-1">
+                    <div class="td-xs-full-bleed">
+                        <div class="td-lazy">
+                            <sly data-sly-test.par="${'par_{0}' @format=['Image']}" />
+                    		<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="td-col-xs-12 td-col-sm-7 td-col-md-5">
+                	<div class="rte">
+                    	<sly data-sly-test.par="${'par_{0}' @format=['TopDesc']}" />
+                    	<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                    </div>
+                    <div class="td-row">
+                        <div class="td-col-xs-12 td-col-sm-7">
+							<sly data-sly-test.par="${'par_{0}' @format=['Button']}" />
+                    		<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                        </div>
+                    </div>
+                    <div class="rte">
+                    	<sly data-sly-test.par="${'par_{0}' @format=['BottomDesc']}" />
+                    	<div data-sly-resource="${@ path= par, resourceType='/apps/component-library/components/layouts/parsys'}" data-sly-unwrap></div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</template>
