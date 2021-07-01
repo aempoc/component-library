@@ -32,18 +32,11 @@
                                         <items jcr:primaryType="nt:unstructured">
                                             <title
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                                 fieldDescription="Leave empty to use the page title."
                                                 fieldLabel="Title"
                                                 name="./jcr:title"
-                                                useFixedInlineToolbar="{Boolean}true">
-                                                <rtePlugins
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceSuperType="/apps/component-library/components/atomic/text/v1/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/rtePlugins"/>
-                                                <uiSettings
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceSuperType="/apps/component-library/components/atomic/text/v1/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text/uiSettings"/>
-                                            </title>
+                                                useFixedInlineToolbar="{Boolean}true"/>
                                             <types
                                                 granite:class="core-title-sizes"
                                                 jcr:primaryType="nt:unstructured"

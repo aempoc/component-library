@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Form Button"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.form.button.v2.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_form_button_v2"
+    trackingFeature="core-components:form-button:v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <styles
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Styles"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <buttonType
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Button Type"
+                                                name="./buttonType">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <primary
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Primary"
+                                                        value="td-button td-button-block td-cta-button td-cta-action td-button-primary"/>
+                                                    <secondary
+                                                        granite:hide="${cqDesign.disableStatic}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Secondary"
+                                                        value="td-button td-button-block td-cta-button td-cta-action td-button-secondary"/>
+                                                    <clearGreen
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Clear Green"
+                                                        value="td-button td-button-block td-cta-button td-cta-action td-button-clear-green"/>
+                                                    <standalone
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Standalone"
+                                                        value="td-link-standalone"/>
+                                                </items>
+                                            </buttonType>
+                                            <buttonSize
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Button Size"
+                                                name="./buttonSize">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <xl
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Extra Large"
+                                                        value="td-button-large"/>
+                                                    <lg
+                                                        granite:hide="${cqDesign.disableStatic}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Large"
+                                                        value="td-button-large"/>
+                                                    <md
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Medium"
+                                                        value="col-7 col-sm-3 col-md-3 col-lg-3"/>
+                                                    <sm
+                                                        granite:hide="${cqDesign.disableSearch}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Small"
+                                                        value="col-5 col-sm-2 col-md-2 col-lg-2"/>
+                                                </items>
+                                            </buttonSize>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </styles>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

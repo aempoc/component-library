@@ -1,3 +1,8 @@
+<sly data-sly-test.aBanner="${properties.bannerType=='aBanner'}"
+		 data-sly-use.aBannerTemplate="aBanner.html"
+         data-sly-call="${aBannerTemplate.aBanner @ teaser=teaser}"></sly>
+
+
 <div data-sly-use.buttonStyle="com.aem.compLib.core.models.Button" data-sly-unwrap>
    <a data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
                 data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
