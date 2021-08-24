@@ -9,7 +9,7 @@
             placeholderType=allowed.placeholderResourceType}"></sly>
     <sly data-sly-test="${!isAllowedApplicable}"
          data-sly-repeat.child="${api.paragraphs}"
-         data-sly-resource="${child.path @ resourceType=child.resourceType, decoration='false', cssClassName=child.cssClass}"></sly>
+         data-sly-resource="${child.path @ resourceType=child.resourceType, decoration='true', cssClassName=child.cssClass}"></sly>
     <sly data-sly-test="${!isAllowedApplicable && wcmmode.edit}"
          data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/responsivegrid/new', appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"/>
 </div>

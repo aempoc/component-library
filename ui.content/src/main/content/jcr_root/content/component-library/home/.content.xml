@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-08-19T15:12:01.547Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/component-library/settings/wcm/templates/td-responsive-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="home"
+        sling:resourceType="component-library/components/structure/basePage">
+        <root
+            jcr:lastModified="{Date}2021-08-05T09:49:25.637Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="component-library/components/responsivegrid">
+            <header
+                jcr:created="{Date}2021-08-19T07:44:31.788Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-08-19T07:44:31.788Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="component-library/components/structure/header"/>
+            <customteaser
+                cq:styleIds="[1629372964531]"
+                jcr:created="{Date}2021-08-19T11:37:15.576Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-08-19T15:10:31.599Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="component-library/components/content/customteaser"
+                actionsEnabled="false"
+                bannerType="aBanner"
+                descriptionFromPage="false"
+                desktopImage="/content/dam/system/img/1.1-A-Banner-1200px.jpg"
+                landscapeImage="/content/dam/system/img/1.1-A-Banner-1024px.jpg"
+                mobileImage="/content/dam/system/img/1.1-A-Banner-320px-2x.jpg"
+                portraitImage="/content/dam/system/img/1.1-A-Banner-768px.jpg"
+                textIsRich="true"
+                titleFromPage="false"/>
+        </root>
+    </jcr:content>
+</jcr:root>

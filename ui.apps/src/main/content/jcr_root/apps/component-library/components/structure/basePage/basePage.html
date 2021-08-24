@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-CA" xml:lang="en-CA">
+<head data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="description" content="Explore what TD Canada Trust is all about. Learn about our values, initiatives, reporting, news, careers, recent awards, and more.">
+<sly data-sly-include="head.html"></sly>
+<sly data-sly-call="${clientlib.all@categories='wcm.foundation.components.parsys.allowedcomponents'}"/> 
+<sly data-sly-test.clientlibCategories="${currentStyle['clientlibs']}"
+         data-sly-call="${clientlib.all @ categories = clientlibCategories}"></sly>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.all @ categories='component-library.base'}" data-sly-unwrap/>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientlib.css @ categories='component-library.customteaser'}" data-sly-unwrap/>
+<script type="text/javascript">
+	var conTextPathVal ="/ca/en/about-td";
+	var infositeUrl = "https://www.tdcanadatrust.com/products-services/banking/getcookie.jsp";
+	var env="LIVE";
+	var omniRequestValue="";
+	var omniRequestSearchValue="";
+	var omniUrl= "https://context.td.com/omnicclient/omniServlet";
+	var maxRecentlyViewed = 3;
+</script>        
+</head>
+<body class="td_rq_descriptor td-descriptor" ng-app="tdctRedesign" ng-controller="tdctRedesignController as a">
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+     		data-sly-repeat.child="${templatedContainer.structureResources}"
+     		data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='tdgis-body-js.site'}" data-sly-unwrap/>
+
+
+<script>
+    var selectedClass='';
+    $(".lvl-menu").hover(function() {
+        var class_names = $(this).attr('class').split( ' ' );
+        $(".lvl-menu").removeClass('hover-class');
+        $(this).addClass('hover-class');
+        if(class_names[0]!=='second'){
+           $(".second-lvl-menu").hide();
+        }
+        $('#'+class_names[1]).show();
+    });
+
+    $("li").hover(function() {
+        var hasClass = $(this).hasClass('has-menu');
+        if (hasClass) {
+            var anchorCh = $(this)[0].children[0];
+            var divCh = $(this)[0].children[1];
+            var anchorId = $(anchorCh).attr('id');
+            var aTop = document.getElementById('show-submenu');
+            var linkTopPos = aTop.getBoundingClientRect().top;
+            console.log(linkTopPos);
+            if (anchorId === 'show-submenu') {
+                /* for 3rd level menus of multiple 2nd level links,
+                the parent li of the link must have class has-menu,
+                add aria-valuenow attribute to the link,
+                with value as id of the div below it with class hide-menu */
+                selectedClass = $(anchorCh).attr('aria-valuenow');
+                $(divCh).removeClass('hide-menu').addClass('submenu');
+                $(divCh).css('background', '#f3f3f8');
+                if (linkTopPos >= 200) {
+                    $(divCh).css('margin-top', '-190px');
+                }
+            }
+        } else {
+            console.log(selectedClass);
+            $('#' + selectedClass).removeClass('submenu').addClass('hide-menu');
+        }
+    });
+
+   var maxHeight = "0px";
+    $(".flexbox h3").each(function(){
+       if( $(this).css("height").replace("px","")>maxHeight.replace("px","")) {
+			maxHeight=$(this).css("height");
+       }
+    })
+    $(".flexbox h3").css("height",maxHeight);
+</script>
+</body>
+</html>

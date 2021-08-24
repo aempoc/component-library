@@ -1,5 +1,5 @@
-<template data-sly-template.bannerCTA="${ @ teaser}">
-    <section title="description for screen readers" class="td_rq_a_banner td-a-banner a-banner-cta {parallax_top_m:46}" data-bg-srcset='{"lg":"${properties.desktopImage}", "md":"${properties.lanscapeImage}", "sm":"${properties.portraitImage}", "xs":"${properties.mobileImage}"}'>		
+<template data-sly-template.bannerCTA="${ @ teaser,customteaser}">
+    <section title="description for screen readers" class="td_rq_a_banner td-a-banner a-banner-cta {parallax_top_m:46}" data-bg-srcset='{"lg":"${customteaser.desktopImage}", "md":"${customteaser.lanscapeImage}", "sm":"${customteaser.portraitImage}", "xs":"${customteaser.mobileImage}"}'>		
         <div class="td-container td-xs-full-bleed td-banner-content">			
             <div class="td-col td-col-xs-12 td-col-md-5  td-col-md-offset-7 td-col-sm-6  td-col-sm-offset-6 td-col-lg-4 td-col-lg-offset-8">				
                 <div class="td-a-banner-callout parallax-banner">			

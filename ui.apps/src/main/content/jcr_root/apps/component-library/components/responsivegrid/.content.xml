@@ -3,5 +3,5 @@
     cq:isContainer="true"
     jcr:description="Include components in a responsive grid."
     jcr:primaryType="cq:Component"
-    jcr:title="Layout Container-comp lib"
+    jcr:title="Layout Container - Component Library"
     componentGroup="General"/>

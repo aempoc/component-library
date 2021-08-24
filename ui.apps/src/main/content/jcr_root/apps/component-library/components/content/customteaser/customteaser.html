@@ -1,0 +1,21 @@
+<sly data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+	 data-sly-use.customteaser="com.aem.compLib.core.models.CustomTeaser">
+    <section class="td_rq_a_banner td-a-banner {parallax_top_m:46}" data-bg-srcset='{"lg":"${customteaser.desktopImage}","md":"${customteaser.landscapeImage}", "sm":"${customteaser.portraitImage}", "xs":"${customteaser.mobileImage}"}' id="aBanner0" style="opacity: 1;">
+        <div class="td-container td-xs-full-bleed">	
+            <div class="td-col banner-content-lg">				
+                <div class="td-row td-a-banner-callout parallax-banner background-color-white">		
+                    <div class="td-col-xs-12 text-left">
+						<sly data-sly-test="${teaser.description != ''}">
+							${customteaser.description @ context = 'html'}
+						</sly>
+                        <div class="td-row callout-action">
+                            <div class="td-col banner-button-lg">
+                                <button class="td-button td-button-large td-button-primary td-button-block td-copy-nowrap" type="button">Apply Now</button>
+                            </div>
+                        </div>					
+                    </div>								
+                </div>					
+            </div>
+        </div>	
+    </section>
+</sly>

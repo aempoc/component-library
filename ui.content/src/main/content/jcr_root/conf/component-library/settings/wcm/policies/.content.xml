@@ -407,6 +407,90 @@
                         jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
+            <responsivegrid jcr:primaryType="nt:unstructured">
+                <policy_1628156972801
+                    jcr:lastModified="{Date}2021-08-05T09:50:01.302Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="component-library"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:General,group:Component Library - Content,group:Component Library - Form,group:Component Library - Structure]">
+                    <jcr:content
+                        cq:lastReplicated="{Date}2021-08-05T10:01:01.235Z"
+                        cq:lastReplicatedBy="admin"
+                        cq:lastReplicationAction="Activate"
+                        jcr:mixinTypes="[cq:ReplicationStatus]"
+                        jcr:primaryType="nt:unstructured"/>
+                </policy_1628156972801>
+            </responsivegrid>
+            <structure jcr:primaryType="nt:unstructured">
+                <basePage jcr:primaryType="nt:unstructured"/>
+            </structure>
+            <content jcr:primaryType="nt:unstructured">
+                <banner jcr:primaryType="nt:unstructured">
+                    <policy_1629359272053
+                        cq:styleDefaultClasses="bannerLayout"
+                        jcr:lastModified="{Date}2021-08-19T10:04:45.928Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="banner-policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content
+                            cq:lastReplicated="{Date}2021-08-19T10:04:54.558Z"
+                            cq:lastReplicatedBy="admin"
+                            cq:lastReplicationAction="Activate"
+                            jcr:mixinTypes="[cq:ReplicationStatus]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Banner Type"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cmp-title--a-banner"
+                                        cq:styleId="1629360105062"
+                                        cq:styleLabel="A Banner"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="cmp-title--banner-cta"
+                                        cq:styleId="1629360115715"
+                                        cq:styleLabel="Banner CTA"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1629359272053>
+                </banner>
+                <customteaser jcr:primaryType="nt:unstructured">
+                    <policy_1629372937319
+                        cq:styleDefaultClasses="oas-banner-1"
+                        jcr:lastModified="{Date}2021-08-19T11:36:42.854Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Custom Teaser Policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Banner Type"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="oas-banner-1"
+                                        cq:styleId="1629372964531"
+                                        cq:styleLabel="OAS Banner 1"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="oas-banner-2"
+                                        cq:styleId="1629372973013"
+                                        cq:styleLabel="OAS Banner 2"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_1629372937319>
+                </customteaser>
+            </content>
         </components>
     </component-library>
 </jcr:root>
