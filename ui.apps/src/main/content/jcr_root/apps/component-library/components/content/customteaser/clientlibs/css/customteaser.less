@@ -71,3 +71,40 @@
             }
     }
 }
+
+.banner-cta {
+    .td_rq_a_banner {
+        .banner-content-lg {
+			&:extend(.td-col-lg-4); 
+            &:extend(.td-col-lg-offset-8);
+            .text-left {
+				text-align: left!important;
+            }
+            .td-banner-body,td-banner-header {
+				margin-bottom:10px;
+                font-size: 24px;
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 32px;
+                line-height: 2rem;
+                color: #171c16;
+    			font-family: "TD Graphik Light",Helvetica-,droid sans,sans-serif;
+				text-align:left;
+            }
+            .td-link-standalone {
+                font-size: 19px;
+                font-size: 1.1875rem;
+            }
+            .callout-action>div {
+				margin-top:20px;
+            }
+            .callout-action {
+				margin-left: -15px!important;
+        		margin-right: -15px!important;
+                .banner-button-lg {
+                    &:extend(.td-col-lg-6);
+                }
+            }
+        }
+    }
+}

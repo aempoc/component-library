@@ -464,7 +464,7 @@
                 <customteaser jcr:primaryType="nt:unstructured">
                     <policy_1629372937319
                         cq:styleDefaultClasses="oas-banner-1"
-                        jcr:lastModified="{Date}2021-08-19T11:36:42.854Z"
+                        jcr:lastModified="{Date}2021-08-25T08:47:25.458Z"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Custom Teaser Policy"
@@ -476,11 +476,16 @@
                                 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
                                     <item0
+                                        cq:styleClasses="banner-cta"
+                                        cq:styleId="1629881214609"
+                                        cq:styleLabel="Banner with CTA"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
                                         cq:styleClasses="oas-banner-1"
                                         cq:styleId="1629372964531"
                                         cq:styleLabel="OAS Banner 1"
                                         jcr:primaryType="nt:unstructured"/>
-                                    <item1
+                                    <item2
                                         cq:styleClasses="oas-banner-2"
                                         cq:styleId="1629372973013"
                                         cq:styleLabel="OAS Banner 2"

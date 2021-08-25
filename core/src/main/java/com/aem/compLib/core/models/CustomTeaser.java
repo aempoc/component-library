@@ -13,13 +13,13 @@ import org.apache.sling.models.annotations.Model;
 )
 public interface CustomTeaser {
 	@Inject
-	public String getDesktopImage();
+	public Resource getDesktopImage();
 	@Inject
-	public String getLandscapeImage();
+	public Resource getLandscapeImage();
 	@Inject
-	public String getPortraitImage();
+	public Resource getPortraitImage();
 	@Inject
-	public String getMobileImage();
+	public Resource getMobileImage();
 	@Inject
 	public String getTitle();
 	@Inject
