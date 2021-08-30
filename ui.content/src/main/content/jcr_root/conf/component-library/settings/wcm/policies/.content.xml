@@ -422,6 +422,15 @@
                         jcr:mixinTypes="[cq:ReplicationStatus]"
                         jcr:primaryType="nt:unstructured"/>
                 </policy_1628156972801>
+                <policy_1119392484379800
+                    jcr:lastModified="{Date}2021-08-25T16:37:37.890Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Content Fragment Template"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/component-library/components/contentfragment,/apps/component-library/components/contentfragmentlist]">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1119392484379800>
             </responsivegrid>
             <structure jcr:primaryType="nt:unstructured">
                 <basePage jcr:primaryType="nt:unstructured"/>
@@ -498,4 +507,21 @@
             </content>
         </components>
     </component-library>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_1124488631040700
+                        jcr:lastModified="{Date}2021-08-25T18:02:23.646Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content Fragment Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/component-library/components/contentfragment,/apps/component-library/components/contentfragmentlist]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1124488631040700>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
 </jcr:root>
