@@ -1,20 +1,18 @@
-<div data-sly-use.buttonStyle="com.aem.compLib.core.models.Button" data-sly-unwrap>
-
-<sly data-sly-test="${properties.actionType=='buttonType'}">
-   <button data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
-                data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
-                data-sly-use.iconTemplate="icon.html" 
-                id="${component.id}"
-                class="${buttonStyle.buttonType} td-button "
-                href="${button.link}"
-                target="${properties.window}"
-                aria-label="${button.accessibilityLabel}">
-            <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
-            <span data-sly-test="${button.text}">${button.text}</span>
-	</button>
-</div>
+<sly data-sly-use.buttonStyle="com.aem.compLib.core.models.Button" data-sly-unwrap>
+    <sly data-sly-test="${properties.actionType=='buttonType'}">
+       <a data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+                    data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+                    data-sly-use.iconTemplate="icon.html" 
+                    id="${component.id}"
+                    class="${buttonStyle.buttonType} td-button"
+                    href="${button.link}"
+                    target="${properties.window}"
+                    aria-label="${button.accessibilityLabel}">
+                <sly data-sly-call="${iconTemplate.icon @ icon=button.icon}"></sly>
+                <span data-sly-test="${button.text}">${button.text}</span>
+        </a>
+    </sly>
 </sly>
-
 <sly data-sly-test="${properties.actionType=='linkType'}">
 	<a data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
                 data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
@@ -24,22 +22,21 @@
                 target="${properties.window}"
                 aria-label="${button.accessibilityLabel}">${button.text}</a>
 </sly>
-
 <sly data-sly-test="${properties.actionType=='search'}">
-<div class="td-cta-action form-group td-multiple-cta" style="height: 42px;">
-<form class="td-search-box ng-pristine ng-valid" onsubmit="var el=this.getElementsByTagName('input')[0];if(el&amp;&amp;el.getAttribute('name')=='search'){var query=el.value;if(query!=''){location.href='/ca/en/personal-banking/branch-locator/#/?search='+query;}}">
-<input data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
-       data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
-	   type="text" placeholder="${button.text}" name="search" class="form-control" aria-label="${button.accessibilityLabel}"><span class="td-search-icon" aria-hidden="true"><span class="td-icon td-icon-search"></span></span><input type="submit" class="td-search-submit" value="search">
-</form>
+    <div class="td-cta-action form-group td-multiple-cta" style="height: 42px;">
+        <form class="td-search-box ng-pristine ng-valid" onsubmit="var el=this.getElementsByTagName('input')[0];if(el&amp;&amp;el.getAttribute('name')=='search'){var query=el.value;if(query!=''){location.href='/ca/en/personal-banking/branch-locator/#/?search='+query;}}">
+        	<input data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+               data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+               type="text" placeholder="${button.text}" name="search" class="form-control" aria-label="${button.accessibilityLabel}"><span class="td-search-icon" aria-hidden="true"><span class="td-icon td-icon-search"></span></span><input type="submit" class="td-search-submit" value="search">
+        </form>
+    </div>
 </sly>
-
 <sly data-sly-test="${properties.actionType=='phone'}">
-<div class="td-cta-action td-multiple-cta td-cta">
-<h3 class="td-cta-info" data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
- data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component">
-	<a href="https://tel:+${button.text}" class="visible-xs-inline text-nowrap">${button.text}</a>
-	<span class="visible-sm-inline visible-md-inline visible-lg-inline text-nowrap">${button.text}</span>
-</h3>
-</div>
+    <div class="td-cta-action td-multiple-cta td-cta">
+        <h3 class="td-cta-info" data-sly-use.button="com.adobe.cq.wcm.core.components.models.Button"
+         data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component">
+            <a href="https://tel:+${button.text}" class="visible-xs-inline text-nowrap">${button.text}</a>
+            <span class="visible-sm-inline visible-md-inline visible-lg-inline text-nowrap">${button.text}</span>
+        </h3>
+    </div>
 </sly>

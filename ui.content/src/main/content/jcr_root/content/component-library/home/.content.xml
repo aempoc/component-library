@@ -2,12 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-08-19T15:12:01.547Z"
+        cq:lastModified="{Date}2021-08-31T17:56:53.717Z"
         cq:lastModifiedBy="admin"
         cq:template="/conf/component-library/settings/wcm/templates/td-responsive-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="home"
-        sling:resourceType="component-library/components/structure/basePage">
+        sling:resourceType="component-library/components/structure/basePage"
+        requestid="[NAPST-1293]"
+        theme="default">
         <root
             jcr:lastModified="{Date}2021-08-05T09:49:25.637Z"
             jcr:lastModifiedBy="admin"

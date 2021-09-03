@@ -29,46 +29,59 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <theme
-                                        granite:class="cq-dialog-dropdown-showhide"
+                                    <pageinfo
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                        fieldLabel="Theme"
-                                        name="./theme">
-                                        <granite:data
-                                            jcr:primaryType="nt:unstructured"
-                                            cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target"/>
+                                        jcr:title="Page Information"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <default
-                                                granite:hide="${cqDesign.disableChildren}"
+                                            <theme
+                                                granite:class="language"
                                                 jcr:primaryType="nt:unstructured"
-                                                text="Default"
-                                                value="default"/>
-                                            <dark
-                                                granite:hide="${cqDesign.disableChildren}"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                emptyText="Select"
+                                                fieldLabel="Theme"
+                                                name="./theme">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="theme"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Emerald v1.0"
+                                                        value=""/>
+                                                    <green
+                                                        granite:hide="${cqDesign.disableStatic}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Emerald v1.5"
+                                                        value="green"/>
+                                                    <dark
+                                                        granite:hide="${cqDesign.disableChildren}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Bloodstone v1.0"
+                                                        value="dark"/>
+                                                    <blue
+                                                        granite:hide="${cqDesign.disableStatic}"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Sapphire v1.0"
+                                                        value="blue"/>
+                                                </items>
+                                            </theme>
+                                            <requestid
+                                                cq:showOnCreate="{Boolean}true"
                                                 jcr:primaryType="nt:unstructured"
-                                                text="Dark"
-                                                value="dark"/>
-                                            <green
-                                                granite:hide="${cqDesign.disableStatic}"
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Green"
-                                                value="green"/>
-                                            <blue
-                                                granite:hide="${cqDesign.disableStatic}"
-                                                jcr:primaryType="nt:unstructured"
-                                                text="Blue"
-                                                value="blue"/>
+                                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                allowBulkEdit="{Boolean}true"
+                                                autocreateTag="{Boolean}true"
+                                                fieldLabel="Request Id"
+                                                multiple="{Boolean}true"
+                                                name="./requestid">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="requestid"/>
+                                            </requestid>
                                         </items>
-                                    </theme>
-                                    <requestid
-                                        cq:showOnCreate="{Boolean}true"
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldDescription="Enter the request Id"
-                                        fieldLabel="Request Id"
-                                        name="./requestid"
-                                        text="Request Id"/>
+                                    </pageinfo>
                                 </items>
                             </column>
                         </items>
