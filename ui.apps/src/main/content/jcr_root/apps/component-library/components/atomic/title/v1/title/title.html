@@ -4,7 +4,7 @@
      data-sly-use.titleStyle="com.aem.compLib.core.models.Title"
      data-sly-test.text="${title.text}"
      id="${component.id}"
-     data-sly-element="${title.type}" class="${titleStyle.alignment} ${titleStyle.cssClass}">
+     data-sly-element="${title.type}" class="${titleStyle.cssClass}">
      <a data-sly-unwrap="${!title.linkURL || title.linkDisabled}" href="${title.linkURL}" class="td-link-standalone"
         data-cmp-clickable="${title.data ? true : false}" target="${properties.window}">${text @ context="html"}</a>
 </h1>
